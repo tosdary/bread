@@ -28,6 +28,7 @@ function preload() {
 function setup() {
   createCanvas(320, 320);
   // Create the video
+  var timer = setTimeout(setup, 1000);
   var constraints = {
 
     audio: false,
@@ -40,17 +41,17 @@ function setup() {
 
       }
 
-    }   
+    }
 
-    //video: {
+    /*video: {
 
-      //facingMode: "user"
+      facingMode: "user"
 
-    //}
+    }*/
 
   };
-  
-  
+
+
   video = createCapture(constraints);
   video.size(320, 320);
   video.hide();
