@@ -23,12 +23,13 @@ let label = "";
 // Load the model first
 function preload() {
   classifier = ml5.imageClassifier(imageModelURL + 'model.json');
-}
+  var timer = setInterval(preload, 3000);
+	}
 
 function setup() {
   createCanvas(320, 320);
-  // Create the video
-  var timer = setTimeout(setup, 1000);
+  //Create the video
+  //var timer = setInterval(setup, 5000);
   var constraints = {
 
     audio: false,
@@ -61,7 +62,7 @@ function setup() {
   classifyVideo();
 }
 
-function draw() {
+function draw() {	
   background(0);
   // Draw the video
   image(flippedVideo, 0, 0);
