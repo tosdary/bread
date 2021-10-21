@@ -32,7 +32,7 @@ function setup() {
   //var timer = setInterval(setup, 5000);
   var constraints = {
 
-    audio: false,
+    /*audio: false,
 
     video: {
 
@@ -42,13 +42,12 @@ function setup() {
 
       }
 
-    }
+    }*/
 
-    /*video: {
+    video: {
 
       facingMode: "user"
-
-    }*/
+	}
 
   };
 
