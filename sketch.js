@@ -34,7 +34,7 @@ function setup() {
 
     audio: false,
 
-    /*video: {
+    video: {
 
       facingMode: {
 
@@ -42,13 +42,13 @@ function setup() {
 
       }
 
-    }*/
+    }
 
-    video: {
+    /*video: {
 
       facingMode: "user"
 
-    }
+    }*/
 
   };
 
