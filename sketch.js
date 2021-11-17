@@ -97,17 +97,4 @@ function gotResult(error, results) {
   classifyVideo();
 }
 
-function App(){
-   const connectToDeviceAndSubscribeToUpdates = async () => {
-   const device = await navigator.bluetooth
-      .requestDevice({
-          filters: [{ services: ['battery_service']}
-      });
-   const server = await device.gatt.connect();
-   const service = await server.getPrimaryService('battery_service');
-   const characteristic = await service.getCharacteristic('battery_level');
-   const reading = await characteristic.readValue();
-   console.log(reading.getUint8(0) + '%');
-};
-}
 
