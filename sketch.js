@@ -97,4 +97,3 @@ function gotResult(error, results) {
   classifyVideo();
 }
 
-
