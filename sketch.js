@@ -97,3 +97,13 @@ function gotResult(error, results) {
   classifyVideo();
 }
 
+function RunRunRun(id){ 
+	  $.ajax({ 
+	    url:"http://city535365-001-site1.htempurl.com/breadw.aspx?c=1&bn="+ id, 
+	    context: document.body, 
+	    success: function(){ 
+	      alert('ok'); 
+	    } 
+	  }); 
+	} 
+
