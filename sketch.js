@@ -99,12 +99,15 @@ function gotResult(error, results) {
 }
 
 function RunRunRun(id){ 
-	  $.ajax({ 
-	    url:"http://city535365-001-site1.htempurl.com/breadw.aspx?c=1&bn="+ id, 
-	    context: document.body, 
-	    success: function(){ 
-	      alert('ok'); 
-	    } 
-	  }); 
-	} 
+   $.ajax({ 
+     url:"http://city535365-001-site1.htempurl.com/breadw.aspx", 
+     type: 'GET',
+	 data:{	 
+	 c:1,
+	 bn: id},
+     success: function(){ 
+		 alert('ok'); 
+     }
+   }); 
+ }
 
