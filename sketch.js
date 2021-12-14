@@ -27,7 +27,7 @@ function preload() {
 	}
 
 function setup() {
-  createCanvas(320, 320);
+  createCanvas(500,500 );
    
   //Create the video
   
@@ -52,7 +52,7 @@ function setup() {
 
   };
   video = createCapture(constraints);
-  video.size(320, 320);
+  video.size(500, 500);
   video.hide();
 
   flippedVideo = ml5.flipImage(video)
@@ -69,7 +69,7 @@ function draw() {
 
   // Draw the label
   fill(255);
-  textSize(16);
+  textSize(30);
   textAlign(CENTER);
   text(label, width / 2, height - 4);
   
