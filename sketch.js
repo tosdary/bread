@@ -68,8 +68,9 @@ function draw() {
   
 
   // Draw the label
-  fill(255);
   textSize(30);
+  fill(0, 0, 0);
+  textStyle(BOLD);
   textAlign(CENTER);
   text(label, width / 2, height - 4);
   
